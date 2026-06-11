@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#f5f5f0" rx="20"/>
+
+  <!-- Subtle shadow under okra group -->
+  <ellipse cx="200" cy="340" rx="120" ry="20" fill="rgba(0,0,0,0.08)"/>
+
+  <!-- Okra pod 1 (back-left, slightly rotated) -->
+  <g transform="rotate(-30, 140, 200)">
+    <ellipse cx="140" cy="200" rx="14" ry="80" fill="#4a8c2a"/>
+    <ellipse cx="140" cy="124" rx="14" ry="12" fill="#2d5e17"/>
+    <!-- ridges -->
+    <line x1="133" y1="140" x2="133" y2="275" stroke="#3a7020" stroke-width="1.5" opacity="0.6"/>
+    <line x1="147" y1="140" x2="147" y2="275" stroke="#3a7020" stroke-width="1.5" opacity="0.6"/>
+    <!-- tip -->
+    <path d="M133,275 Q140,298 147,275" fill="#2d5e17"/>
+    <!-- stem -->
+    <line x1="140" y1="112" x2="140" y2="90" stroke="#5d4037" stroke-width="4" stroke-linecap="round"/>
+    <path d="M140,95 Q150,80 165,70" stroke="#4a8c2a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Okra pod 2 (center, vertical) -->
+  <g transform="rotate(5, 200, 200)">
+    <ellipse cx="200" cy="205" rx="15" ry="90" fill="#5aab30"/>
+    <ellipse cx="200" cy="118" rx="15" ry="13" fill="#3a7a1a"/>
+    <!-- ridges -->
+    <line x1="192" y1="135" x2="192" y2="288" stroke="#4a8c24" stroke-width="1.5" opacity="0.6"/>
+    <line x1="208" y1="135" x2="208" y2="288" stroke="#4a8c24" stroke-width="1.5" opacity="0.6"/>
+    <line x1="200" y1="135" x2="200" y2="288" stroke="#4a8c24" stroke-width="1" opacity="0.4"/>
+    <!-- tip -->
+    <path d="M192,288 Q200,316 208,288" fill="#3a7a1a"/>
+    <!-- stem -->
+    <line x1="200" y1="105" x2="200" y2="80" stroke="#5d4037" stroke-width="5" stroke-linecap="round"/>
+    <path d="M200,88 Q215,72 235,65" stroke="#5aab30" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Okra pod 3 (right, rotated) -->
+  <g transform="rotate(28, 265, 200)">
+    <ellipse cx="265" cy="200" rx="13" ry="78" fill="#4a9626"/>
+    <ellipse cx="265" cy="126" rx="13" ry="11" fill="#316012"/>
+    <!-- ridges -->
+    <line x1="258" y1="140" x2="258" y2="272" stroke="#3c7c1e" stroke-width="1.5" opacity="0.6"/>
+    <line x1="272" y1="140" x2="272" y2="272" stroke="#3c7c1e" stroke-width="1.5" opacity="0.6"/>
+    <!-- tip -->
+    <path d="M258,272 Q265,294 272,272" fill="#316012"/>
+    <!-- stem -->
+    <line x1="265" y1="115" x2="265" y2="93" stroke="#5d4037" stroke-width="4" stroke-linecap="round"/>
+    <path d="M265,100 Q278,85 295,78" stroke="#4a9626" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Okra pod 4 (far left, more rotated) -->
+  <g transform="rotate(-50, 100, 230)">
+    <ellipse cx="100" cy="230" rx="12" ry="70" fill="#3d8020"/>
+    <ellipse cx="100" cy="163" rx="12" ry="10" fill="#285510"/>
+    <line x1="93" y1="178" x2="93" y2="295" stroke="#336a1a" stroke-width="1.5" opacity="0.6"/>
+    <line x1="107" y1="178" x2="107" y2="295" stroke="#336a1a" stroke-width="1.5" opacity="0.6"/>
+    <path d="M93,295 Q100,314 107,295" fill="#285510"/>
+    <line x1="100" y1="153" x2="100" y2="134" stroke="#5d4037" stroke-width="4" stroke-linecap="round"/>
+    <path d="M100,140 Q112,126 128,118" stroke="#3d8020" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Highlight sheen on center pod -->
+  <ellipse cx="196" cy="170" rx="5" ry="30" fill="rgba(255,255,255,0.25)" transform="rotate(5,196,170)"/>
+  <ellipse cx="261" cy="168" rx="4" ry="22" fill="rgba(255,255,255,0.20)" transform="rotate(28,261,168)"/>
+
+  <!-- Label -->
+  <rect x="100" y="358" width="200" height="30" rx="15" fill="#4a8c2a" opacity="0.85"/>
+  <text x="200" y="378" font-family="Georgia, serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">Lady's Finger (Okra)</text>
+</svg>

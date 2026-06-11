@@ -1,0 +1,5 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f0f0f0"/>
+  <path d="M50,150 C30,120 30,80 50,50 C70,20 130,20 150,50 C170,80 170,120 150,150 C130,180 70,180 50,150 Z" fill="#4CAF50" stroke="#2E7D32" stroke-width="5"/>
+  <text x="100" y="115" font-family="Arial" font-size="30" fill="white" text-anchor="middle">Okra</text>
+</svg>

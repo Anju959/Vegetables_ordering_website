@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farm to Home | Fresh Organic Vegetables Direct from Farmers</title>
+  <meta name="description" content="Order fresh, 100% organic vegetables grown locally by farmers and delivered directly to your doorstep. Supporting local agriculture, eating fresh.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons for modern aesthetic -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Sticky Glassmorphism Navigation Header -->
+  <header id="header">
+    <div class="container">
+      <a href="#home" class="logo" id="nav-logo">
+        <i class="fa-solid fa-leaf logo-leaf"></i>
+        <span>FarmToHome</span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active" data-sec="home">Home</a>
+        <a href="#products" class="nav-link" data-sec="products">Products</a>
+        <a href="#contact" class="nav-link" data-sec="contact">Contact Us</a>
+      </nav>
+      
+      <div class="header-actions">
+        <!-- Floating Cart Trigger Button -->
+        <button class="cart-icon-btn" id="cart-btn" aria-label="Open Shopping Cart">
+          <i class="fa-solid fa-shopping-basket"></i>
+          <span class="cart-badge" id="cart-badge-count">0</span>
+        </button>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <i class="fa-solid fa-star"></i> Direct From Local Farm
+        </div>
+        <h1 class="hero-title">
+          Fresh Organic Vegetables <br>Delivered <span>To Your Door</span>
+        </h1>
+        <p class="hero-description">
+          Support local farmers and enjoy crisp, chemical-free vegetables harvested daily. From our fertile soil directly to your family dinner table.
+        </p>
+        <div class="hero-buttons">
+          <a href="#products" class="btn btn-primary">
+            Shop Fresh Harvest <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Our Story</a>
+        </div>
+      </div>
+      
+      <!-- Hero Right Graphics with Morphing Image Frame -->
+      <div class="hero-image-wrapper">
+        <div class="hero-image-container">
+          <img src="assets/hero_banner.png" alt="Fresh Harvest Banner" class="hero-img">
+        </div>
+        <!-- Floating Interactive Badges -->
+        <div class="floating-badge fb-1">
+          <div class="badge-icon"><i class="fa-solid fa-seedling"></i></div>
+          <div class="badge-text">
+            <p>Certified</p>
+            <h4>100% Organic</h4>
+          </div>
+        </div>
+        <div class="floating-badge fb-2">
+          <div class="badge-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+          <div class="badge-text">
+            <p>Super Fast</p>
+            <h4>Same-Day Delivery</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Farmer Benefits Features Section -->
+  <section class="features">
+    <div class="container section-padding">
+      <div class="section-header">
+        <h2>Why Choose Us</h2>
+        <p>We pride ourselves on the quality, speed, and health benefits of our direct vegetable supply system.</p>
+      </div>
+      
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <h3>Naturally Grown</h3>
+          <p>No synthetic chemicals, hormones, or pesticides. Just clean water, rich compost, and fresh sunshine.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-carrot"></i>
+          </div>
+          <h3>Freshly Harvested</h3>
+          <p>Harvested in the early morning hours and packaged immediately so they retain their crispness and nutrition.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-user-group"></i>
+          </div>
+          <h3>Support Farmers</h3>
+          <p>By purchasing from us, 100% of the revenue goes directly back to supporting sustainable farming families.</p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-box-open"></i>
+          </div>
+          <h3>Eco Packaging</h3>
+          <p>All vegetables are sorted and delivered in biodegradable, plastic-free boxes to reduce environmental footprint.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>Fresh Harvest Catalog</h2>
+        <p>Choose from our daily assortment of fresh vegetables. Pick your favorites and add them to your cart.</p>
+      </div>
+      
+      <!-- Search, Categories Filter Container -->
+      <div class="products-filter-container">
+        <div class="search-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="product-search" class="search-input" placeholder="Search vegetables (e.g. Tomato)...">
+        </div>
+        
+        <div class="filter-categories" id="filter-categories-container">
+          <button class="filter-btn active" data-category="all">All Crops</button>
+          <button class="filter-btn" data-category="greens">Leafy Greens</button>
+          <button class="filter-btn" data-category="roots">Root Crops</button>
+          <button class="filter-btn" data-category="nightshades">Nightshades</button>
+          <button class="filter-btn" data-category="gourds">Gourds & Others</button>
+        </div>
+      </div>
+      
+      <!-- Products Dynamic Grid -->
+      <div class="products-grid" id="products-grid">
+        <!-- Rendered dynamically via JavaScript -->
+        <div class="empty-products">
+          <i class="fa-solid fa-spinner fa-spin"></i>
+          <p>Loading fresh harvest...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Farmer Contact & Bio Section -->
+  <section id="contact" class="section-padding contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        
+        <!-- Farmer Bio Panel -->
+        <div class="contact-info-panel">
+          <h3>Meet Your Farmer</h3>
+          <p class="farmer-story">
+            Hello! I'm Farmer Laxman, a third-generation organic vegetable grower. At Green Valley Farms, we believe in restoring the relationship between communities and their food sources. Every seed is sown with care and nurtured naturally to provide your family with the healthiest, tastiest farm-fresh produce possible.
+          </p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-item-text">
+                <h4>Farm Location</h4>
+                <p>Warangal, Telangana</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-item-text">
+                <h4>Direct Phone</h4>
+                <p>+91 7330858431</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-item-text">
+                <h4>Email Farm</h4>
+                <p>laxman@freshorganic.com</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Social Badges -->
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Facebook Page"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="WhatsApp Chat"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        
+        <!-- Interactive Feedback Form -->
+        <div class="contact-form-panel">
+          <h3>Send Farmer a Message</h3>
+          <form id="contact-form" autocomplete="on">
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-message">Your Message</label>
+              <textarea id="contact-message" class="form-control" placeholder="Ask about crop cycles, special request..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <i class="fa-solid fa-leaf logo-leaf"></i>
+            <span>FarmToHome</span>
+          </a>
+          <p>Delivering nutrition, freshness, and organic goodness directly from local crops to support healthy homes and families.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Navigation</h4>
+          <ul>
+            <li><a href="#home">Home Banner</a></li>
+            <li><a href="#products">Fresh Crops Catalog</a></li>
+            <li><a href="#contact">Farmer Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-newsletter">
+          <h4>Farm Updates</h4>
+          <p>Get notified when a new seasonal harvest becomes available!</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your Email" aria-label="Newsletter Email Input" required>
+            <button type="submit" class="newsletter-btn">Join</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 FarmToHome Organic Farms. All Rights Reserved. Crafted with care for local communities.</p>
+        <div class="footer-payments">
+          <i class="fa-brands fa-cc-visa" title="Visa Card Payment Option"></i>
+          <i class="fa-brands fa-cc-mastercard" title="Mastercard Payment Option"></i>
+          <i class="fa-solid fa-money-bill-wave" title="Cash on Delivery Payment Option"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Cart Side Drawer Panel -->
+  <div class="cart-drawer-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Cart Details">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-basket-shopping text-muted"></i> Your Basket</h3>
+      <button class="close-drawer-btn" id="close-cart-btn" aria-label="Close Shopping Cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    
+    <div class="cart-body" id="cart-items-body">
+      <!-- Loaded dynamically via JavaScript -->
+    </div>
+    
+    <div class="cart-footer">
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">₹0.00</span>
+        </div>
+        <div class="summary-row">
+          <span>Delivery Fee</span>
+          <span id="cart-delivery">₹0.00</span>
+        </div>
+        <div class="summary-row total">
+          <span>Grand Total</span>
+          <span id="cart-total">₹0.00</span>
+        </div>
+      </div>
+      
+      <button class="btn btn-primary checkout-btn" id="checkout-trigger-btn">
+        Proceed to Checkout <i class="fa-solid fa-credit-card"></i>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Checkout Step-by-Step Form Modal -->
+  <div class="modal-overlay" id="checkout-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Complete Your Order</h3>
+        <button class="close-modal-btn" id="close-checkout-btn" aria-label="Close Checkout Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Mini order summary -->
+        <div class="order-summary-box">
+          <h4>Order Summary</h4>
+          <div class="summary-items-mini" id="mini-summary-items">
+            <!-- Populated via JavaScript -->
+          </div>
+          <div class="summary-row total">
+            <span>Total Payable</span>
+            <span id="checkout-total-payable">₹0.00</span>
+          </div>
+        </div>
+        
+        <!-- Form -->
+        <form id="checkout-form">
+          <div class="form-group">
+            <label for="checkout-name">Full Name</label>
+            <input type="text" id="checkout-name" class="form-control" placeholder="Farmer David's Customer" required>
+          </div>
+          <div class="form-group">
+            <label for="checkout-phone">Phone Number</label>
+            <input type="tel" id="checkout-phone" class="form-control" placeholder="10-digit mobile number" pattern="[6-9][0-9]{9}" title="Please enter a valid 10-digit mobile number" required>
+          </div>
+          <div class="form-group">
+            <label for="checkout-address">Delivery Address</label>
+            <textarea id="checkout-address" class="form-control" placeholder="House/Flat No, Street, Landmark, Area" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Confirm and Order (COD) <i class="fa-solid fa-circle-check"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order Placement Success Modal -->
+  <div class="modal-overlay" id="success-modal">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="success-illustration">
+          <div class="success-ring">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+        </div>
+        <div class="success-body">
+          <h3>Order Confirmed!</h3>
+          <p>Thank you for shopping directly from local farmers. David is harvesting your fresh vegetables right now. Your order will reach you soon.</p>
+          
+          <div class="tracking-info">
+            <p>Mock Order Tracking ID</p>
+            <div class="tracking-number" id="success-tracking-id">F2H-2026-X839</div>
+          </div>
+          
+          <button class="btn btn-primary btn-block" id="success-close-btn">
+            Continue Shopping <i class="fa-solid fa-shopping-basket"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Javascript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
